@@ -175,6 +175,10 @@ body {
     padding: 0px 25px 0px;
 }
 
+#evolução img {
+    max-width: 100%;
+}
+
 #rodape {
     display: flex;
     align-items: center;
