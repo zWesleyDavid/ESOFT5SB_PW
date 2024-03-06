@@ -209,7 +209,7 @@ body {
     color: #4dff00;
 }
 
-@media screen and (max-width: 1050px) {
+@media screen and (max-width: 1080px) {
     #infos{
         flex-direction: row;
         align-items: flex-start;
