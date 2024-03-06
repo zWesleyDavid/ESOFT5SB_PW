@@ -209,7 +209,72 @@ body {
     color: #4dff00;
 }
 
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 1050px) {
+    #infos{
+        flex-direction: row;
+        align-items: flex-start;
+        padding: 10px 2%;
+    }
+
+    #infos a {
+        font-size: 12px;
+    }
+
+    #infos li{
+        font-size: 12px;
+    }
+
+    #info-squirtle {
+        align-items: center;
+        margin: 50px 50px;
+    }
+
+    #info-squirtle h2{
+        align-self: flex-start;
+    }
+
+    #info-squirtle img {
+        width: 50%;
+    }
+
+    #caracteristicas {
+        margin: 50px 50px;
+    }
+
+    #curiosidades {
+        margin: 50px 50px;
+    }
+
+    #curiosidades li{
+        padding-top: 20px;
+    }
+
+    #artigo {
+        margin: 50px 50px;
+    }
+
+    #recursos {
+        margin: 50px 50px;
+    }
+
+    #evolução {
+        margin: 50px 50px;
+    }
+
+    #evolução ul {
+        flex-direction: row;
+    }
+
+    #evolução li {
+        padding-top: 20px;
+    }
+
+    #rodape p{
+        font-size: 15px;
+    }
+}
+
+@media screen and (max-width: 750px) {
     #infos{
         flex-direction: column;
         align-items: flex-start;
