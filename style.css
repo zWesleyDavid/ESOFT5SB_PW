@@ -208,3 +208,57 @@ body {
 #rodape a[href*="tel"] {
     color: #4dff00;
 }
+
+@media screen and (max-width: 800px) {
+    #infos{
+        flex-direction: column;
+    }
+
+    #infos li{
+        padding: 10px;
+    }
+
+    #info-squirtle {
+        margin: 50px 50px;
+    }
+
+    #info-squirtle img {
+        width: 100%;
+    }
+
+    #caracteristicas {
+        margin: 50px 50px;
+    }
+
+    #curiosidades {
+        margin: 50px 50px;
+    }
+
+    #curiosidades li{
+        padding-top: 20px;
+    }
+
+    #artigo {
+        margin: 50px 50px;
+    }
+
+    #recursos {
+        margin: 50px 50px;
+    }
+
+    #evolução {
+        margin: 50px 50px;
+    }
+
+    #evolução ul {
+        flex-direction: column;
+    }
+
+    #evolução li {
+        padding-top: 20px;
+    }
+
+    #rodape p{
+        font-size: 15px;
+    }
+}
