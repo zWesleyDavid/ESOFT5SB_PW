@@ -76,7 +76,8 @@ body {
 
 #info-squirtle img {
     align-self: center;
-    width: 20rem;
+    width: 320px;
+    height: 320px;
 }
 
 #info-squirtle p {
@@ -183,6 +184,8 @@ body {
 
 #evolução img {
     max-width: 100%;
+    width: 215px;
+    height: 215px;
 }
 
 #rodape {
