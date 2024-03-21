@@ -11,9 +11,15 @@
 </head>
 
 <body>
+
     <header>
         <h1 id="titulo">Squirtle</h1>
     </header>
+
+    <audio autoplay>
+        <source src="src/Pokemon Yellow Theme (Red _ Blue _ Yellow).mp3" type="audio/mp3">
+        Seu navegador não suporta a reprodução de áudio.
+    </audio>
 
     <div id="links" role="navigation" aria-label="Navegação principal">
         <ul id="infos">
@@ -29,8 +35,14 @@
     <main>
         <section id="info-squirtle" aria-labelledby="info-squirtle-label">
             <h2 id="info-squirtle-label">Informações sobre Squirtle</h2>
-            <img alt="Imagem do Squirtle" 
-                src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/7.png" />
+
+            <div id="imgsquirtle">
+                <img id="sqt1" alt="Imagem do Squirtle"
+                    src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/7.png" />
+                <img id="sqt2" alt="Imagem do Squirtle"
+                    src="https://archives.bulbagarden.net/media/upload/thumb/7/79/Squirtle_SSBU.png/200px-Squirtle_SSBU.png" />
+            </div>
+
             <p>
                 Squirtle é um Pokémon do tipo Água. É o Pokémon inicial da região de
                 Kanto e evolui para Wartortle.
