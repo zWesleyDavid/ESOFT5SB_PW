@@ -15,6 +15,16 @@ body {
     background-color: #f4f4f4;
 }
 
+main {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 12px;
+    row-gap: 42px;
+    margin: 12px;
+    margin-top: 42px;
+    margin-bottom: 42px;
+}
+
 ::-webkit-scrollbar {
     width: 12px;
 }
@@ -58,6 +68,7 @@ body {
 
 #infos a:hover {
     color: #ffc107;
+    transition: 0.5s;
 }
 
 #li:hover a {
@@ -68,7 +79,7 @@ body {
     display: flex;
     flex-wrap: wrap;
     flex-direction: column;
-    margin: 2rem 2.5rem;
+    /*margin: 2rem 2.5rem;*/
     padding: 1rem;
     background-color: #fff;
     box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 3px 0px, rgba(0, 0, 0, 0.06) 0px 1px 2px 0px;
@@ -85,10 +96,20 @@ body {
     width: 200px;
 }
 
+#sqt1:hover {
+    scale: 1.1;
+    transition: 0.5s;
+}
+
 #sqt2 {
     height: 200px;
     width: 200px;
     padding: 46px;
+}
+
+#sqt2:hover {
+    scale: 1.1;
+    transition: 0.5s;
 }
 
 #info-squirtle p {
@@ -97,7 +118,7 @@ body {
 
 #caracteristicas {
     background-color: #fff;
-    margin: 2rem 2.5rem;
+    /*margin: 2rem 2.5rem;*/
     padding: 1rem;
     display: flex;
     flex-wrap: wrap;
@@ -112,7 +133,7 @@ body {
 
 #curiosidades {
     background-color: #fff;
-    margin: 2rem 2.5rem;
+    /*margin: 2rem 2.5rem;*/
     padding: 1rem;
     display: flex;
     flex-wrap: wrap;
@@ -139,7 +160,7 @@ body {
 
 #artigo {
     background-color: #fff;
-    margin: 2rem 2.5rem;
+    /*margin: 2rem 2.5rem;*/
     padding: 1rem;
     display: flex;
     flex-wrap: wrap;
@@ -154,7 +175,7 @@ body {
 
 #recursos {
     background-color: #fff;
-    margin: 2rem 2.5rem;
+    /*margin: 2rem 2.5rem;*/
     padding: 1rem;
     display: flex;
     flex-wrap: wrap;
@@ -174,7 +195,7 @@ body {
 
 #evolução {
     background-color: #fff;
-    margin: 2rem 2.5rem;
+    /*margin: 2rem 2.5rem;*/
     padding: 1rem;
     box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 3px 0px, rgba(0, 0, 0, 0.06) 0px 1px 2px 0px;
 }
@@ -200,6 +221,21 @@ body {
     max-width: 100%;
 }
 
+#evo1:hover {
+    scale: 1.1;
+    transition: 0.5s;
+}
+
+#evo2:hover {
+    scale: 1.1;
+    transition: 0.5s;
+}
+
+#evo3:hover {
+    scale: 1.1;
+    transition: 0.5s;
+}
+
 #rodape {
     display: flex;
     align-items: center;
@@ -220,14 +256,71 @@ body {
 #rodape a:hover {
     text-decoration: underline;
     opacity: 0.8;
+    transition: 0.5s;
 }
 
 #rodape a[href*="mailto"] {
     color: orangered;
 }
 
+#rodape ema:hover {
+    transition: 0.5s;
+}
+
 #rodape a[href*="tel"] {
     color: #4dff00;
+}
+
+#tele:hover {
+    transition: 0.5s;
+}
+
+@media screen and (max-width: 768px) {
+    main {
+        grid-template-columns: 1fr;
+    }
+
+    #infos {
+        flex-direction: column;
+    }
+
+    #evolução ul {
+        flex-direction: column;
+    }
+
+    #evolução p {
+        font-size: 16px;
+    }
+
+    #titulo {
+        font-size: 20px;
+    }
+
+    h2 {
+        font-size: 18px;
+    }
+
+    @keyframes fadeIn {
+        from {
+            opacity: 0;
+            transform: translateY(-20px);
+        }
+
+        to {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    }
+
+    #evolução li,
+    #info-squirtle,
+    #caracteristicas,
+    #curiosidades,
+    #artigo,
+    #recursos {
+        animation: fadeIn 1s ease-out;
+    }
+
 }
 
 /*
