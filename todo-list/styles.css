@@ -41,6 +41,10 @@ header a {
     height: 25px;
 }
 
+#tituloTarefa {
+    padding: 10px 0;
+}
+
 #texto {
     height: 100px;
     width: 165px;
@@ -64,9 +68,9 @@ header a {
         background-color: #fff;
         border-radius: 6px;
         position: relative;
-      }
-      
-      button::before {
+    }
+
+    button::before {
         position: absolute;
         content: "";
         background: var(--color);
@@ -74,29 +78,48 @@ header a {
         height: 200px;
         z-index: -1;
         border-radius: 50%;
-      }
-      
-      button:hover {
+    }
+
+    button:hover {
         color: white;
-      }
-      
-      button:before {
+    }
+
+    button:before {
         top: 100%;
         left: 100%;
         transition: 0.3s all;
-      }
-      
-      button:hover::before {
+    }
+
+    button:hover::before {
         top: -30px;
         left: -30px;
-      }
-      
+    }
+
+}
+
+#listaTarefas {
+    display: flex;
+    flex-direction: column;
+    margin: 0 20px;
+    padding: 20px;
 }
 
 #tarefas {
     display: flex;
+    flex-direction: column;
     justify-content: center;
-    border-: #333;
+    list-style: none;
+    margin: 40px;
+}
+
+#listaTarefas ul {
+    gap: 20px;
+}
+
+#listaTarefas li {
+    padding: 16px;
+    border-radius: 5px;
+    background-color: #ededed;
 }
 
 footer {
