@@ -1,0 +1,111 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200; 1.300;1.400;1.500;1.600;1.700;1.800;1.900&display=swap');
+
+* {
+    font-family: 'Poppins', sans-serif;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+    height: 100vh;
+}
+
+header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 40px 40px 20px;
+    color: #fff;
+    background-color: #333;
+    gap: 20px;
+}
+
+header a {
+    color: #fff;
+    text-decoration: none;
+}
+
+#form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    margin: 20px 0;
+}
+
+#titulo {
+    height: 25px;
+}
+
+#texto {
+    height: 100px;
+    width: 165px;
+}
+
+#button {
+    button {
+        --color: #0074d9;
+        font-family: inherit;
+        display: inline-block;
+        width: 6em;
+        height: 2.6em;
+        line-height: 2.5em;
+        overflow: hidden;
+        cursor: pointer;
+        margin: 20px;
+        font-size: 17px;
+        z-index: 1;
+        color: var(--color);
+        border: 2px solid var(--color);
+        background-color: #fff;
+        border-radius: 6px;
+        position: relative;
+      }
+      
+      button::before {
+        position: absolute;
+        content: "";
+        background: var(--color);
+        width: 150px;
+        height: 200px;
+        z-index: -1;
+        border-radius: 50%;
+      }
+      
+      button:hover {
+        color: white;
+      }
+      
+      button:before {
+        top: 100%;
+        left: 100%;
+        transition: 0.3s all;
+      }
+      
+      button:hover::before {
+        top: -30px;
+        left: -30px;
+      }
+      
+}
+
+#tarefas {
+    display: flex;
+    justify-content: center;
+    border-: #333;
+}
+
+footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 40px;
+    color: #fff;
+    background-color: #333;
+    gap: 20px;
+}
