@@ -26,7 +26,13 @@ document.addEventListener("DOMContentLoaded", () => {
 
         tarefas.forEach(tarefa => {
             const li = document.createElement('li');
-            li.textContent = `${tarefa.titulo}: ${tarefa.desc}`;
+            const titulo = document.createElement('h3');
+            titulo.textContent = `${tarefa.titulo}`;
+            
+            const descri = document.createElement('p');
+            descri.textContent = `${tarefa.desc}`;
+            li.appendChild(titulo);
+            li.appendChild(descri);
             listaTarefas.appendChild(li);
         });
     }
@@ -48,7 +54,8 @@ function formatDate(date) {
         month: "numeric",
         year: "numeric",
         hour: "numeric",
-        minute: "numeric"
+        minute: "numeric",
+        second: "numeric"
     }).format(date);
 
     return formattedDate;
