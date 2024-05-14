@@ -117,9 +117,12 @@ header a {
 }
 
 #listaTarefas li {
+    display: flex;
+    flex-direction: column;
     padding: 16px;
     border-radius: 5px;
     background-color: #ededed;
+    gap: 20px;
 }
 
 footer {
